@@ -90,3 +90,25 @@ Dado que la aplicación consume el archivo de datos mediante `fetch()`, se requi
 
 6. **¿Qué cambios realizarías para convertir el prototipo en una aplicación lista para producción?**
    * Implementar un backend con una base de datos real (ej. PostgreSQL o MongoDB), autenticación segura de usuarios (JWT), validación de esquemas en servidor y empaquetado con un framework moderno.
+
+---
+
+## 📸 Evidencias y Capturas de Pantalla del Sistema
+
+### 🌐 1. Página Principal (Landing Page)
+![Landing Page](./assets/index.png)
+
+### 📊 2. Panel Principal (Dashboard y KPIs)
+![Dashboard](./assets/dashboard.png)
+
+### 📈 3. Gráfico Estadístico Dinámico (Chart.js)
+![Gráfico Estadístico](./assets/grafico.png)
+
+### 🔍 4. Filtros Combinados en Tiempo Real
+![Filtros](./assets/filtros.png)
+
+### ➕ 5. Formulario de Registro (Crear Producto)
+![Registro Nuevo](./assets/registro.png)
+
+### ✏️ 6. Formulario Modal (Editar Producto)
+![Editar Producto](./assets/editar.png)
