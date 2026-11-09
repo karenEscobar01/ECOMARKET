@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMarket | Productos Orgánicos y Locales de Colombia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado y Navegación Principal -->
+  <header class="header">
+    <div class="header-top-bar">
+      <p class="header-top-text">🌿 Envíos 100% neutros en carbono a toda Colombia</p>
+    </div>
+    <div class="header-container container">
+      <a href="#" class="brand-logo" aria-label="Página principal de EcoMarket">
+        <span class="logo-icon">🌱</span>
+        <span class="logo-text">Eco<span class="logo-highlight">Market</span></span>
+      </a>
+
+      <div class="header-search">
+        <label for="search-input" class="sr-only">Buscar productos u origen</label>
+        <input type="search" id="search-input" class="search-input" placeholder="Buscar café de origen, frutas orgánicas...">
+      </div>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#categorias" class="nav-link">Categorías</a></li>
+          <li class="nav-item"><a href="#como-funciona" class="nav-link">¿Cómo funciona?</a></li>
+          <li class="nav-item"><a href="#productores" class="nav-link">Nuestros Productores</a></li>
+          <li class="nav-item"><a href="#impacto" class="nav-link">Impacto Social</a></li>
+          <li class="nav-item"><a href="dashboard.html" class="nav-link" style="color: var(--color-primary-accent); font-weight:700;">Panel Admin</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-icon" aria-label="Ver carrito de compras">
+          🛒 <span class="cart-badge">3</span>
+        </button>
+        <a href="dashboard.html" class="btn btn-outline-nav">Administrar</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge badge-accent">100% Campo Colombiano</span>
+          <h1 id="hero-heading" class="hero-title">Del campo colombiano a tu mesa, directo y sostenible</h1>
+          <p class="hero-description">
+            Conectamos a familias agricultoras locales con tu hogar. Alimentos frescos, libres de químicos y producidos con comercio justo.
+          </p>
+          <div class="hero-actions">
+            <a href="dashboard.html" class="btn btn-primary">Explorar catálogo</a>
+            <a href="#como-funciona" class="btn btn-secondary">Conocer proceso</a>
+          </div>
+          <div class="hero-trust-badges">
+            <div class="trust-item">
+              <span class="trust-number">+500</span>
+              <span class="trust-label">Productores verificados</span>
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <span class="trust-number">24/48h</span>
+              <span class="trust-label">Cosecha a tu puerta</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=800&q=80" alt="Cesta de hortalizas y frutas recién cosechadas" class="hero-img">
+            <div class="hero-floating-card">
+              <span class="floating-icon">👩‍🌾</span>
+              <div>
+                <p class="floating-title">Finca La Esperanza</p>
+                <p class="floating-sub">Cultura orgánica • Santander</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Propuesta de Valor -->
+    <section id="como-funciona" class="process-section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-primary">Sencillo y transparente</span>
+          <h2 id="process-heading" class="section-title">¿Cómo funciona EcoMarket?</h2>
+          <p class="section-subtitle">Garantizamos frescura en cada entrega apoyando el desarrollo rural.</p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <div class="process-step-number">01</div>
+            <h3 class="process-card-title">Descubre productores</h3>
+            <p class="process-card-text">Explora cosechas orgánicas, café artesanal y alimentos de origen cultivados cerca de ti.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-step-number">02</div>
+            <h3 class="process-card-title">Haz tu pedido fresco</h3>
+            <p class="process-card-text">Los agricultores recolectan tus productos bajo pedido para evitar el desperdicio de alimentos.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-step-number">03</div>
+            <h3 class="process-card-title">Recibe en tu hogar</h3>
+            <p class="process-card-text">Entregamos en empaques biodegradables mediante rutas con huella de carbono compensada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 EcoMarket Colombia S.A.S. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
