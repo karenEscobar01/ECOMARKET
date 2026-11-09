@@ -70,3 +70,23 @@ Dado que la aplicación consume el archivo de datos mediante `fetch()`, se requi
 3. Instala y abre la extensión Live Server.
 4. Haz clic derecho sobre `index.html` y selecciona "Open with Live Server" (o haz clic en el botón Go Live en la barra inferior de VS Code).
 5. Para acceder al panel de administración, navega directamente a `dashboard.html` o utiliza el enlace directo en la barra de navegación superior.
+
+## 🧠 Preguntas de Reflexión
+
+1. **¿Qué diferencias encontraste entre utilizar zero-shot, one-shot y few-shot prompting?**
+   * El zero-shot da instrucciones generales sin ejemplos previos. El few-shot*(utilizado para el JSON) provee ejemplos estructurados estrictos, garantizando que la IA replique con precisión exacta los tipos de datos, nombres de campos y restricciones de negocio.
+
+2. **¿Por qué es importante definir la estructura y las reglas del dataset antes de generarlo con IA?**
+   * Previene inconsistencias de tipos de datos, asegura que las categorías y ciudades coincidan con los filtros de la aplicación y evita que falle la validación programática.
+
+3. **¿Qué errores detectó la validación programática que no habías identificado manualmente?**
+   * Detectó sutiles desajustes de tipos de datos (como booleanos recibidos como texto o fechas fuera del rango cronológico establecido), asegurando que el motor visual no colapse.
+
+4. **¿Qué ventajas ofrece separar los datos, la lógica JavaScript y la presentación HTML/CSS?**
+   * Mantiene la modularidad y el principio de responsabilidad única. Permite escalar la interfaz visual sin alterar las reglas de negocio y consumir catálogos locales de forma independiente.
+
+5. **¿Qué limitaciones tiene localStorage frente a una base de datos real?**
+   * El localStorage tiene una capacidad de almacenamiento muy limitada (aprox. 5MB), carece de transacciones complejas, seguridad de acceso, consultas relacionales avanzadas y no permite sincronización multiusuario en tiempo real.
+
+6. **¿Qué cambios realizarías para convertir el prototipo en una aplicación lista para producción?**
+   * Implementar un backend con una base de datos real (ej. PostgreSQL o MongoDB), autenticación segura de usuarios (JWT), validación de esquemas en servidor y empaquetado con un framework moderno.
